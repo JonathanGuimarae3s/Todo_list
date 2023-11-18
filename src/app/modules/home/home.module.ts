@@ -5,6 +5,7 @@ import { TodoInputAddItemsComponent } from './components/todo-input-add-items/to
 import { TodoButtonDeleteAllComponent } from './components/todo-button-delete-all/todo-button-delete-all.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './page/home/home.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -18,7 +19,7 @@ import { HomeComponent } from './page/home/home.component';
   ],
   exports:[HomeComponent],
   imports: [
-    CommonModule
+    CommonModule, FormsModule
   ]
 })
 export class HomeModule { }
